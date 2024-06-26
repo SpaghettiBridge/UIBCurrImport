@@ -1,0 +1,26 @@
+id: '17194044880430.19206993116305915'
+definitionId: accordionItem
+styles: {}
+properties:
+  name: accordionItem3
+  heightMode: auto
+  collapsible: true
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Topic
+parentSlotId: '17194044880430.7257097705676203'
+index: 0
+slots:
+  - id: '17194044880430.5399392153934008'
+    name: header
+    children:
+      - heading4.yml
+      - btn_addTopic.yml
+  - id: '17194044880430.6449911342450207'
+    name: footer
+    children: []
+  - id: '17194044880430.5231948866653011'
+    name: views
+    children:
+      - view_4/view_4.yml

@@ -1,0 +1,230 @@
+id: '17193996235400.28083468390359734'
+kind: workflow
+name: startCreating
+nameConfigured: true
+steps:
+  - id: '17193998089910.38729564433965735'
+    type: customAsyncCode
+    name: create_currHeaderArray
+    params:
+      - type: asyncCode
+        value: ./create_currHeaderArray.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17193996491670.37947499635280457'
+    type: loopAction
+    name: createCurrHead
+    params:
+      - type: action
+        value: '17193996576900.8164175133629761'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customArray
+        value: ./createCurrHead-customArray.js
+        valueType: interpolatedValue
+      - type: iterationChunkSize
+        value: '3'
+        valueType: custom
+      - type: iterationChunkDelay
+        value: '300'
+        valueType: custom
+      - type: maxIterations
+        value: ''
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+      - type: executionMethod
+        value: sequential
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    paused: false
+    nameConfigured: true
+  - id: '17194007677020.43054771317889595'
+    type: customAsyncCode
+    name: genCurrPhasesArray
+    params:
+      - type: asyncCode
+        value: ./genCurrPhasesArray.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17194015302390.35938130090242426'
+    type: BULK_CREATE_ENTITY
+    name: createPhases
+    params:
+      - type: datasourceId
+        value: Supabase Bridgelink Apps Database
+        valueType: string
+      - type: resourceId
+        value: public.curr_map_phases
+        valueType: string
+      - type: entity
+        value: ./createPhases-entity.yml
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17194018039690.4941005386975297'
+    type: customAsyncCode
+    name: genCurrTopics
+    params:
+      - type: asyncCode
+        value: ./genCurrTopics.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17194020497620.6165221597951631'
+    type: BULK_CREATE_ENTITY
+    name: createCurrTopics
+    params:
+      - type: datasourceId
+        value: Supabase Bridgelink Apps Database
+        valueType: string
+      - type: resourceId
+        value: public.curr_map_topics
+        valueType: string
+      - type: entity
+        value: ./createCurrTopics-entity.yml
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+    paused: false
+  - id: '17194065910520.16916307523513496'
+    type: customAsyncCode
+    name: genCurrlitTexts
+    params:
+      - type: asyncCode
+        value: ./genCurrlitTexts.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17194066667540.2061112674983543'
+    type: BULK_CREATE_ENTITY
+    name: create
+    params:
+      - type: datasourceId
+        value: Supabase Bridgelink Apps Database
+        valueType: string
+      - type: resourceId
+        value: public.curr_map_texts
+        valueType: string
+      - type: entity
+        value: ./create-entity.yml
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17194032501930.4006182380934127'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '17193904379520.02947835777843877'
+        valueType: custom
+      - type: isActionsLibraryCall
+        value: false
+        valueType: custom
+      - type: customParams
+        value: ./execute-customParams.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.startCreating.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.startCreating.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.startCreating.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+selected: true
+configured: true
+actions:
+  success:
+    - action: '17194033640040.6370099201734452'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  error: []

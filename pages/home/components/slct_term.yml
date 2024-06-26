@@ -1,0 +1,87 @@
+id: '17193897471090.33163061752509293'
+definitionId: selectMulti
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 10
+      w: 12
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: >-
+      {{actions.get_terms.data.filter(x=> x.academic_year_id
+      ==ui.slct_acYear.value )}}
+    withData: true
+  name: slct_term
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: id
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_terms.loading}}'
+    value: false
+  labelConfig:
+    text: Term
+    position: horizontal
+    align: left
+  value: ''
+  allowSelectAll:
+    value: true
+    dataValue: 'true'
+    withData: false
+  multi: false
+  allowResetValue:
+    value: true
+    dataValue: 'true'
+    withData: false
+  __UIBAKERY__SHOW__CONDITION__CODE__: ''
+actions: {}
+slots:
+  - id: '17193897471090.38413020198930115'
+    name: optionViewTypes
+    children:
+      - id: '17193898045300.23271963765392578'
+        definitionId: atomicString
+        parentSlotId: '17193897471090.38413020198930115'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString
+          prop: name
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []

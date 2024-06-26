@@ -1,0 +1,16 @@
+id: '17193922718240.5753069153820529'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view2
+  viewName: Functional Maths
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 2
+slots:
+  - id: '17193922718240.06682812017562734'
+    name: content
+    children:
+      - tbl_fumTopics.yml

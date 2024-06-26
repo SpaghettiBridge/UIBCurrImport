@@ -1,0 +1,75 @@
+id: '17193906475340.5813271905958046'
+definitionId: selectMulti
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 12
+      y: 20
+      w: 12
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 70
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: '{{actions.get_phases.data.filter(x=> x.phase == "Community Ready")}}'
+    withData: true
+  name: slct_phase_CommunityReady
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: id
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_phases.loading}}'
+    value: false
+  labelConfig:
+    text: Community Ready
+    position: horizontal
+    align: left
+  value: ''
+actions: {}
+slots:
+  - id: '17193906475340.09412569238164403'
+    name: optionViewTypes
+    children:
+      - id: '17193907696310.8212404711356471'
+        definitionId: atomicString
+        parentSlotId: '17193906475340.09412569238164403'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString3
+          prop: name
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []

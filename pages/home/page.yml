@@ -1,0 +1,46 @@
+id: '1'
+name: Home
+url: home
+slots:
+  - id: '1'
+    name: content
+    bindings: {}
+    children:
+      - id: '1'
+        definitionId: grid
+        parentSlotId: '1'
+        index: 0
+        styles: {}
+        properties:
+          name: grid
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        actions:
+          pageLoad:
+            - action: '17193904379520.02947835777843877'
+              paramCode: ''
+              blockPageLoad: false
+              preventDefault: false
+              index: 0
+        slots:
+          - id: '2'
+            name: content
+            bindings: {}
+            children:
+              - components/slct_term.yml
+              - components/slct_acYear.yml
+              - components/inp_YearlyTheme.yml
+              - components/inp_TermlyTheme.yml
+              - components/inp_SafeguardingTheme.yml
+              - components/inp_psheTheme.yml
+              - components/inp_fbvTheme.yml
+              - components/slct_phase_CommunityReady.yml
+              - components/slct_phase_OvercomingBarriers.yml
+              - components/slct_phase_21stCenturySkills.yml
+              - components/card/card.yml
+              - components/tbs_topics.yml
+              - components/divider.yml
+              - components/divider2.yml
+              - components/publicLuLiteracyTextsTable.yml

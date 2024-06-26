@@ -1,0 +1,20 @@
+mode: structured
+valueByMode:
+  structured:
+    pillar:
+      value: >-
+        {{actions.get_pillars.data.filter(x=> x.id ==ui.slct_topPill.value
+        )[0].pillar}}
+    cache_type:
+      value: '{{ui.slct_topCache.value}}'
+    subject:
+      value: >-
+        {{actions.get_subjects.data.filter(x=> x.id ==ui.slct_topsubj.value
+        )[0].subject}}
+    topic:
+      value: '{{ui.inp_topic.value}}'
+    pillar_id:
+      value: '{{ui.slct_topPill.value}}'
+    subject_id:
+      value: '{{ui.slct_topsubj.value}}'
+  custom: ''

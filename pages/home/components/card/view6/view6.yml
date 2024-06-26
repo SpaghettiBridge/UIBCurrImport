@@ -1,0 +1,16 @@
+id: '17193923566970.6975441002485483'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view6
+  viewName: Technology and Design
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 6
+slots:
+  - id: '17193923566970.6541246493054431'
+    name: content
+    children:
+      - tbl_tadTopics.yml

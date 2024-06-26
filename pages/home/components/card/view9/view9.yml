@@ -1,0 +1,16 @@
+id: '17193923622010.4432079218870739'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view9
+  viewName: PfA
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 9
+slots:
+  - id: '17193923622010.6209343795632809'
+    name: content
+    children:
+      - tbl_pfaTopics.yml

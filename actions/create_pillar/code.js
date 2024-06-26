@@ -1,0 +1,1 @@
+{{ui.inp_pillar.reset()}}

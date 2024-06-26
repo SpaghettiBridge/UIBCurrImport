@@ -1,0 +1,15 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: ''
+  title: Import from Git
+  description: null
+  breakpoints: []
+  rendererCachingEnabled: false
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: default
+internalType: project

@@ -1,0 +1,24 @@
+mode: structured
+valueByMode:
+  structured:
+    service_id:
+      value: '{{params.service}}'
+    academic_year_id:
+      value: '{{params.year}}'
+    term_id:
+      value: '{{params.term}}'
+    yearly_theme:
+      value: '{{params.yearT}}'
+    termly_theme:
+      value: '{{params.termT}}'
+    safeguarding_theme:
+      value: '{{params.safeT}}'
+    pshe_theme:
+      value: '{{params.psheT}}'
+    fbv_theme:
+      value: '{{params.fbvT}}'
+    display_name:
+      value: '{{params.yearDisp}} : {{params.termDisp}}'
+    year_number:
+      value: '{{params.num}}'
+  custom: ''

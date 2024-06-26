@@ -1,0 +1,16 @@
+id: '17193923587850.4359724070513735'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view7
+  viewName: PSHE
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 7
+slots:
+  - id: '17193923587850.6231883839547461'
+    name: content
+    children:
+      - tbl_psheTopics.yml

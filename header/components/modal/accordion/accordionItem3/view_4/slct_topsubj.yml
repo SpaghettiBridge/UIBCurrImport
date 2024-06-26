@@ -1,0 +1,76 @@
+id: '17194047075660.42071229159022683'
+definitionId: selectWithAtomics
+parentSlotId: '17194044880430.030016588245528553'
+styles:
+  xl:
+    gridItem:
+      x: 6
+      y: 0
+      w: 6
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 10
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: >-
+      {{actions.get_subjects.data.filter(x=> x.pillar_id ==
+      ui.slct_topPill.value)}}
+    withData: true
+  name: slct_topsubj
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: id
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_subjects.loading}}'
+    value: false
+  labelConfig:
+    text: Subject
+    position: horizontal
+    align: left
+actions: {}
+slots:
+  - id: '17194047075660.6367431042987881'
+    name: optionViewTypes
+    children:
+      - id: '17194048417090.0423861706684312'
+        definitionId: atomicString
+        parentSlotId: '17194047075660.6367431042987881'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString62
+          prop: subject
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []

@@ -1,0 +1,277 @@
+id: '17194063382220.2680596683108589'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 62
+      w: 24
+      h: 295
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 369
+      w: 24
+      h: 80
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  data: '{{actions.get_literacy_texts.data}}'
+  name: publicLuLiteracyTextsTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Literacy Texts
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_literacy_texts.loading}}'
+    value: false
+  heightMode: auto
+  limit: '25'
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+  rowHeight: dynamic
+  multiplyRowSelection:
+    value: true
+    dataValue: 'false'
+    withData: false
+  rowSelectionType:
+    value: checkbox
+    dataValue: row
+    withData: false
+  enableUserColumnResize:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showFilter: true
+actions: {}
+slots:
+  - id: '17194063382220.983060171851805'
+    name: columns
+    children:
+      - id: '17194063829140.12540405085254247'
+        definitionId: atomicString
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString65
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 0
+        slots: []
+      - id: '17194063829140.1757441139169602'
+        definitionId: atomicString
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString66
+          prop: year_group
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 1
+        slots: []
+      - id: '17194063829140.7176351262403691'
+        definitionId: atomicNumber
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber
+          prop: term
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          widthMode: auto
+          filter: true
+        index: 2
+        slots: []
+      - id: '17194063829140.2683911675932653'
+        definitionId: atomicText
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText23
+          prop: pshe_topics
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+          title: PSHE Topics
+        index: 4
+        slots: []
+      - id: '17194063829140.3142073915446115'
+        definitionId: atomicText
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText24
+          prop: title
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        index: 3
+        slots: []
+      - id: '17194063829140.3952043587173313'
+        definitionId: atomicString
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString67
+          prop: author
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 5
+        slots: []
+      - id: '17194063829140.5143532412753617'
+        definitionId: atomicString
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString68
+          prop: published_year
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 6
+        slots: []
+      - id: '17194063829140.6764808053504827'
+        definitionId: atomicString
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString69
+          prop: contextual_year
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 7
+        slots: []
+      - id: '17194063829140.7690451044496402'
+        definitionId: atomicString
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString70
+          prop: genre
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 8
+        slots: []
+      - id: '17194063829140.5327638246507882'
+        definitionId: atomicText
+        parentSlotId: '17194063382220.983060171851805'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText25
+          prop: summary
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        index: 9
+        slots: []

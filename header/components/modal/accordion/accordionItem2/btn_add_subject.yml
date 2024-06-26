@@ -1,0 +1,45 @@
+id: '17194050608190.2886295237807679'
+definitionId: button
+parentSlotId: '17194044880430.14114443107899044'
+styles:
+  xl:
+    gridItem:
+      id: '17194050608190.2886295237807679'
+      x: 22
+      y: 0
+      w: 2
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17194050608190.2886295237807679'
+      x: 22
+      y: 9
+      w: 2
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: btn_add_subject
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: save
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{ui.accordion.collapsed[1].collapsed == false}}'
+actions:
+  buttonClick:
+    - action: '17194056044010.8774072955125365'
+      paramCode: ''
+      index: 0
+slots: []

@@ -1,0 +1,16 @@
+id: '17193923555920.8212752093498161'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view5
+  viewName: Creative and Aesthetic
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 5
+slots:
+  - id: '17193923555920.5581923302069811'
+    name: content
+    children:
+      - tbl_caaTopics.yml

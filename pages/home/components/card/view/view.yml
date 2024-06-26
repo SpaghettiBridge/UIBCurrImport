@@ -1,0 +1,16 @@
+id: '17193922712630.4877026617525231'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view
+  viewName: Foundation Linguistics
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 1
+slots:
+  - id: '17193922712630.15059493110617406'
+    name: content
+    children:
+      - tbl_folTopics.yml

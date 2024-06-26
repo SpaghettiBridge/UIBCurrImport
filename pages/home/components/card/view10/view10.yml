@@ -1,0 +1,16 @@
+id: '17193923638560.4239802443533234'
+definitionId: view
+parentSlotId: '17193922135660.9915741070165931'
+styles: {}
+properties:
+  name: view10
+  viewName: Human and Social
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 10
+slots:
+  - id: '17193923638560.5992188069465096'
+    name: content
+    children:
+      - tbl_hasTopics.yml

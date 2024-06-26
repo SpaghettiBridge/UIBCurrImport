@@ -1,0 +1,91 @@
+id: '17194047230060.4052220426325368'
+definitionId: selectWithAtomics
+parentSlotId: '17194044880430.030016588245528553'
+styles:
+  xl:
+    gridItem:
+      x: 12
+      y: 0
+      w: 6
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 30
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  options:
+    value:
+      - value: Knowledge
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: Skills
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+      - title: Understandings
+        value: Understandings
+        __UIBAKERY__SYSTEM_ID__: '17194048565100.32958389125654497'
+    dataValue: |-
+      [
+        {
+          "value": "option_1",
+          "title": "Option 1"
+        },
+        {
+          "value": "option_2",
+          "title": "Option 2"
+        },
+        {
+          "value": "option_3",
+          "title": "Option 3"
+        }
+      ]
+    withData: false
+  name: slct_topCache
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: value
+  showLoading:
+    withData: true
+    dataValue: 'false'
+    value: false
+  labelConfig:
+    text: Type
+    position: horizontal
+    align: left
+actions: {}
+slots:
+  - id: '17194047230060.5946239600012524'
+    name: optionViewTypes
+    children:
+      - id: '17194047230060.3327536962112345'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString63
+          prop: title
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '17194047230060.5946239600012524'
+        index: 1
+        slots: []

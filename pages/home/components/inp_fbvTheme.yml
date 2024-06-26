@@ -1,0 +1,41 @@
+id: '17193902066650.01527907289606012'
+definitionId: stringEdit
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 12
+      y: 10
+      w: 12
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 60
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: inp_fbvTheme
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  labelConfig:
+    text: FBV Theme
+    position: horizontal
+    align: left
+actions: {}
+slots: []

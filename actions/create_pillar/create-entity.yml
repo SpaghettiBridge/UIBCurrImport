@@ -1,0 +1,6 @@
+mode: structured
+valueByMode:
+  structured:
+    pillar:
+      value: '{{ui.inp_pillar.value}}'
+  custom: ''

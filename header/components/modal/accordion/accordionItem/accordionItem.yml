@@ -1,0 +1,26 @@
+id: '17194044880430.1436864711379997'
+definitionId: accordionItem
+styles: {}
+properties:
+  name: accordionItem
+  heightMode: auto
+  collapsible: true
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Pillar
+parentSlotId: '17194044880430.7257097705676203'
+index: 2
+slots:
+  - id: '17194044880430.6295428956616036'
+    name: header
+    children:
+      - heading2.yml
+      - btn_addPillar.yml
+  - id: '17194044880430.06315107595517944'
+    name: footer
+    children: []
+  - id: '17194044880430.026555576246297008'
+    name: views
+    children:
+      - view_2/view_2.yml

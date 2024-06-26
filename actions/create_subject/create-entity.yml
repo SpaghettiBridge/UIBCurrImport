@@ -1,0 +1,8 @@
+mode: structured
+valueByMode:
+  structured:
+    pillar_id:
+      value: '{{ui.slct_subjPill.value}}'
+    subject:
+      value: '{{ui.inp_subj.value}}'
+  custom: ''

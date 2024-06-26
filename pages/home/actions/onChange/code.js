@@ -1,0 +1,1 @@
+{{ui.slct_term.reset()}}
