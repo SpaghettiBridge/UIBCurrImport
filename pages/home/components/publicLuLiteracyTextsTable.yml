@@ -89,6 +89,7 @@ properties:
     dataValue: 'false'
     withData: false
   showFilter: true
+  selectedRowIndex: '-1'
 actions: {}
 slots:
   - id: '17194063382220.983060171851805'

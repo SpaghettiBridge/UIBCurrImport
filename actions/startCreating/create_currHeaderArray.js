@@ -1,7 +1,7 @@
 {{
 
 let yearnum = actions.get_acYears.data.filter(x=> x.id ==ui.slct_acYear.value)[0].sorting -1
-actions.get_services.data.map(x=> {return {
+return actions.get_services.data.map(x=> {return {
 "year":ui.slct_acYear.value,
 "term":ui.slct_term.value,
 "yearDisp":actions.get_acYears.data.filter(x=> x.id ==ui.slct_acYear.value)[0].name,
