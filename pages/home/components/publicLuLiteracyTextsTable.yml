@@ -5,9 +5,9 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 62
+      y: 72
       w: 24
-      h: 295
+      h: 425
     flex:
       size:
         widthValue: 500
@@ -89,7 +89,9 @@ properties:
     dataValue: 'false'
     withData: false
   showFilter: true
-  selectedRowIndex: '-1'
+  selectedRowIndex: |-
+    let length = actions.get_literacy_texts.data.length
+    return Array.from({length }, (_, index) => index);
 actions: {}
 slots:
   - id: '17194063382220.983060171851805'

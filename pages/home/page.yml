@@ -49,3 +49,4 @@ slots:
               - components/divider.yml
               - components/divider2.yml
               - components/publicLuLiteracyTextsTable.yml
+              - components/inp_drivequest.yml

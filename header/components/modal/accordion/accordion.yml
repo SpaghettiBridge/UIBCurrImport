@@ -6,8 +6,8 @@ styles:
     gridItem:
       x: 0
       y: 0
-      w: 24
-      h: 36
+      w: 23
+      h: 77
     flex:
       size:
         widthValue: 400
@@ -36,6 +36,7 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
+actions: {}
 slots:
   - id: '17194044880430.7257097705676203'
     name: items
@@ -43,3 +44,4 @@ slots:
       - accordionItem/accordionItem.yml
       - accordionItem2/accordionItem2.yml
       - accordionItem3/accordionItem3.yml
+      - accordionItem4/accordionItem4.yml

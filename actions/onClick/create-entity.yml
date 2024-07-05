@@ -1,0 +1,22 @@
+mode: structured
+valueByMode:
+  structured:
+    year_group:
+      value: '{{ui.in_yearGroup.value}}'
+    term:
+      value: '{{ui.inp_term.value}}'
+    pshe_topics:
+      value: '{{ui.inp_pshetop.value}}'
+    title:
+      value: '{{ui.inp_title.value}}'
+    author:
+      value: '{{ui.inp_author.value}}'
+    published_year:
+      value: '{{ui.inp_published_year.value}}'
+    contextual_year:
+      value: '{{ui.inp_contextual_year.value}}'
+    genre:
+      value: '{{ui.inp_genre.value}}'
+    summary:
+      value: '{{ui.inp_summary.value}}'
+  custom: ''

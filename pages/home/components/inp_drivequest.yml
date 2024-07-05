@@ -1,39 +1,41 @@
-id: '17194033475990.9399790255032443'
-definitionId: divider
+id: '17201674368150.03924401860756266'
+definitionId: stringEdit
 parentSlotId: '2'
 styles:
   xl:
     gridItem:
       x: 0
-      y: 67
-      w: 24
-      h: 5
+      y: 50
+      w: 12
+      h: 10
     flex:
       size:
-        widthValue: 200
-        widthUnit: px
-        heightValue: 20
+        widthValue: auto
+        heightValue: 40
         heightUnit: px
       grow: '0'
       shrink: '0'
   xs:
     gridItem:
       x: 0
-      y: 364
+      y: 449
       w: 24
-      h: 5
+      h: 10
     flex:
       size:
-        widthValue: 200
-        widthUnit: px
-        heightValue: 20
+        widthValue: auto
+        heightValue: 40
         heightUnit: px
       grow: '0'
       shrink: '0'
 properties:
-  name: divider2
+  name: inp_drivequest
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
+  labelConfig:
+    text: Driving Question
+    position: horizontal
+    align: left
 actions: {}
 slots: []
