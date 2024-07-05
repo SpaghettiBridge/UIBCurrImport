@@ -1,0 +1,25 @@
+id: '17201676877320.5598863199619304'
+definitionId: accordionItem
+parentSlotId: '17194044880430.7257097705676203'
+styles: {}
+properties:
+  name: accordionItem4
+  heightMode: auto
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Literacy Text
+index: 3
+slots:
+  - id: '17201676877320.09824227283052012'
+    name: header
+    children:
+      - heading5.yml
+      - btn_addLitText.yml
+  - id: '17201676877320.5475563895443902'
+    name: footer
+    children: []
+  - id: '17201676877320.4223646115188895'
+    name: views
+    children:
+      - view_5/view_5.yml

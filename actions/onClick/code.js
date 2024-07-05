@@ -1,0 +1,9 @@
+{{ui.in_yearGroup.reset()}}
+{{ui.inp_term.reset()}}
+{{ui.inp_pshetop.reset()}}
+{{ui.inp_title.reset()}}
+{{ui.inp_author.reset()}}
+{{ui.inp_published_year.reset()}}
+{{ui.inp_contextual_year.reset()}}
+{{ui.inp_genre.reset()}}
+{{ui.inp_summary.reset()}}

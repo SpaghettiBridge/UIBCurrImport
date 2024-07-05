@@ -5,9 +5,9 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 55
+      y: 65
       w: 24
-      h: 14
+      h: 19
     flex:
       size:
         widthValue: auto
