@@ -102,33 +102,6 @@ steps:
                             isChanged: true
                             nameConfigured: true
                             paused: false
-                          - id: '17201762013960.9219687154618059'
-                            type: executeAction
-                            name: RunServiceAction
-                            params:
-                              - type: action
-                                value: '17072181493220.3093295790073882'
-                                valueType: string
-                              - type: isActionsLibraryCall
-                                value: false
-                                valueType: string
-                              - type: customParams
-                                value: ./RunServiceAction-customParams.js
-                                valueType: string
-                              - type: successMapper
-                                value: ''
-                                valueType: interpolatedValue
-                              - type: failureMapper
-                                value: ''
-                                valueType: interpolatedValue
-                              - type: mapperEnabled
-                                value: false
-                                valueType: custom
-                            level: 2
-                            fallthroughError: false
-                            isChanged: true
-                            nameConfigured: true
-                            paused: false
                       - condition: false
                         steps:
                           - id: '17201762013960.5835677811480886'
@@ -229,7 +202,7 @@ steps:
                 level: 1
                 fallthroughError: false
                 isChanged: true
-                paused: false
+                paused: true
         valueType: custom
     level: 0
     fallthroughError: false
