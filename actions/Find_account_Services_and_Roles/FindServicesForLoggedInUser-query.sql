@@ -5,7 +5,7 @@ ON public.accounts.id = public.join_account_services.account_id
 JOIN public.join_application_accounts
 ON public.accounts.id = public.join_application_accounts.account_id
 WHERE public.accounts.email = {{state.User.email || user.email   }}
-and join_application_accounts.app_id = '6590b3e7-ffa3-4f47-93cb-5265c2924ae2'
+and join_application_accounts.app_id = '2d6e478d-f0cc-41f3-a863-7f2f180a032e'
 
 -- for tests
 -- WHERE email = 'user@spbridge.co.uk'
