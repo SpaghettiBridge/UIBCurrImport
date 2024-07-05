@@ -1,0 +1,15 @@
+id: '17201762171460.5508339502183972'
+kind: store_item
+name: AccountData
+nameConfigured: true
+steps: []
+mode: manual
+modeConfigured: false
+parentId: null
+storeItem:
+  value: '{}'
+  valueType: object
+  initialValue: '{}'
+  version: 1
+selected: true
+configured: true

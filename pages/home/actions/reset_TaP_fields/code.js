@@ -8,3 +8,4 @@
 {{ui.slct_phase_CommunityReady.reset()}}
 {{ui.slct_phase_OvercomingBarriers.reset()}}
 {{ui.slct_phase_21stCenturySkills.reset()}}
+{{ui.inp_drivequest.reset()}}
