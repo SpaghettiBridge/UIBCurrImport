@@ -1,0 +1,1 @@
+{{ui.card2.selectView(ui.tbs_topics2.selectedTab.title)}}

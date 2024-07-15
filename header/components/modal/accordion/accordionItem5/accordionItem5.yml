@@ -1,0 +1,25 @@
+id: '17210491697310.9234023365544075'
+definitionId: accordionItem
+parentSlotId: '17194044880430.7257097705676203'
+styles: {}
+properties:
+  name: accordionItem5
+  heightMode: auto
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Target
+index: 3
+slots:
+  - id: '17210491697310.755220883514403'
+    name: header
+    children:
+      - heading6.yml
+      - btn_addTarget.yml
+  - id: '17210491697310.7806618907082459'
+    name: footer
+    children: []
+  - id: '17210491697310.23906251254209'
+    name: views
+    children:
+      - view_6/view_6.yml

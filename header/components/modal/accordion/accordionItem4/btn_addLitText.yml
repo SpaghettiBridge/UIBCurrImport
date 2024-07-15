@@ -34,7 +34,7 @@ properties:
     - xl
     - xs
   text: save
-  __UIBAKERY__SHOW__CONDITION__CODE__: '{{ui.accordion.collapsed[3].collapsed == false}}'
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{ui.accordion.collapsed[4].collapsed == false}}'
 actions:
   buttonClick:
     - action: '17201677276360.556023674989365'

@@ -1,0 +1,16 @@
+mode: structured
+valueByMode:
+  structured:
+    topic_id:
+      value: '{{params.topic}}'
+    level:
+      value: '{{params.level}}'
+    category:
+      value: '{{params.category}}'
+    target:
+      value: '{{params.target}}'
+    subject_id:
+      value: '{{params.subject}}'
+    pillar_id:
+      value: '{{params.pillar}}'
+  custom: ''

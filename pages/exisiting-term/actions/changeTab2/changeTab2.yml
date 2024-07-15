@@ -1,0 +1,35 @@
+id: '17210539966410.5832083732997237'
+kind: workflow
+name: changeTab2
+nameConfigured: true
+steps:
+  - id: '17210539966410.4624213577687881'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.changeTab2.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.changeTab2.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.changeTab2.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true
+parentPageId: '17210533465490.682386052214137'

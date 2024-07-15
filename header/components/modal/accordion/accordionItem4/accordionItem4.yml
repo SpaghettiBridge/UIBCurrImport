@@ -9,7 +9,7 @@ properties:
     - xl
     - xs
   title: Literacy Text
-index: 3
+index: 4
 slots:
   - id: '17201676877320.09824227283052012'
     name: header

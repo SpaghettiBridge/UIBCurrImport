@@ -1,0 +1,70 @@
+id: '17210510835570.5187188358414254'
+kind: workflow
+name: creating_targets
+nameConfigured: true
+steps:
+  - id: '17210566404650.4257079892649749'
+    type: loopAction
+    name: loop
+    params:
+      - type: action
+        value: '17210565444370.01810347040541016'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customArray
+        value: ./loop-customArray.js
+        valueType: interpolatedValue
+      - type: iterationChunkSize
+        value: '3'
+        valueType: custom
+      - type: iterationChunkDelay
+        value: '300'
+        valueType: custom
+      - type: maxIterations
+        value: ''
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+      - type: executionMethod
+        value: sequential
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    paused: false
+  - id: '17210511657140.2206286146206009'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    paused: false
+mode: manual
+modeConfigured: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.creating_targets.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.creating_targets.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.creating_targets.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+selected: true
+configured: true

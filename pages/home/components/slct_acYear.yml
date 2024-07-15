@@ -46,7 +46,7 @@ properties:
   optionValueKey: id
   showLoading:
     withData: true
-    dataValue: '{{actions.get_terms.loading}}'
+    dataValue: '{{actions.get_newterms.loading}}'
     value: false
   labelConfig:
     text: Year
