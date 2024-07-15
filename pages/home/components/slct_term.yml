@@ -38,7 +38,7 @@ properties:
         title: ''
         __UIBAKERY__SYSTEM_ID__: '2'
     dataValue: >-
-      {{actions.get_terms.data.filter(x=> x.academic_year_id
+      {{actions.get_newterms.data.filter(x=> x.academic_year_id
       ==ui.slct_acYear.value )}}
     withData: true
   name: slct_term
@@ -48,7 +48,7 @@ properties:
   optionValueKey: id
   showLoading:
     withData: true
-    dataValue: '{{actions.get_terms.loading}}'
+    dataValue: '{{actions.get_newterms.loading}}'
     value: false
   labelConfig:
     text: Term

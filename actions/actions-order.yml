@@ -2,6 +2,8 @@
 - appStart
 - appInit
 - startCreating
+- creating_targets
+- create_target
 - create_topic
 - create_subject
 - create_pillar
@@ -9,3 +11,11 @@
 - AccountData
 - ErrorCount
 - User
+- created_terms
+- get_subjects
+- get_newterms
+- get_pillars
+- get_existing_terms
+- get_acYears
+- get_topics
+- start_updating

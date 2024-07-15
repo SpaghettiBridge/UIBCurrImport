@@ -1,0 +1,222 @@
+id: '17210539416120.4008040229882126'
+definitionId: smartTable
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 139
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 139
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  data: >-
+    {{actions.get_topics.data.filter(x=> x.pillar =="PfA"&&
+    !actions.get_curr_map_topics.data.map(c=> c.topic_id).includes(x.id))}}
+  name: tbl_pfaTopics2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_topics.loading}}'
+    value: false
+  limit: '25'
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+  rowHeight: small
+  heightMode: auto
+  showFilter: true
+  multiplyRowSelection:
+    value: true
+    dataValue: 'false'
+    withData: false
+  rowSelectionType:
+    value: checkbox
+    dataValue: row
+    withData: false
+  selectedRowIndex: '-1'
+parentSlotId: '17210539416120.10155594881945063'
+index: 0
+actions: {}
+slots:
+  - id: '17210539416120.2315748732934595'
+    name: columns
+    children:
+      - id: '17210539416120.7046075867803783'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString122
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 0
+        slots: []
+      - id: '17210539416120.9203158775947744'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString123
+          prop: pillar
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 1
+        slots: []
+      - id: '17210539416120.46924304195614397'
+        definitionId: atomicText
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText44
+          prop: topic
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 2
+        slots: []
+      - id: '17210539416120.0017750416168764716'
+        definitionId: atomicText
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText45
+          prop: subject
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 3
+        slots: []
+      - id: '17210539416120.02303220483892421'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString124
+          prop: cache_type
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 4
+        slots: []
+      - id: '17210539416120.18500137923828364'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString125
+          prop: pillar_id
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 5
+        slots: []
+      - id: '17210539416120.8243956538461494'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString126
+          prop: subject_id
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.2315748732934595'
+        index: 6
+        slots: []

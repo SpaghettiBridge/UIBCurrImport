@@ -1,0 +1,16 @@
+id: '17210539416120.4600158544399653'
+definitionId: view
+styles: {}
+properties:
+  name: view18
+  viewName: Physical Education
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '17210539416120.7236288384241412'
+index: 8
+slots:
+  - id: '17210539416120.39180973912082795'
+    name: content
+    children:
+      - tbl_peTopics2.yml

@@ -33,3 +33,5 @@ children:
         children:
           - components/btn_save.yml
           - components/modal/modal.yml
+          - components/horizontalMenu.yml
+          - components/button.yml

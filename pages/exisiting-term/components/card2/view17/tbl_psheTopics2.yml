@@ -1,0 +1,222 @@
+id: '17210539416120.25381285047059343'
+definitionId: smartTable
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 139
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 139
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  data: >-
+    {{actions.get_topics.data.filter(x=> x.pillar =="PSHE"&&
+    !actions.get_curr_map_topics.data.map(c=> c.topic_id).includes(x.id))}}
+  name: tbl_psheTopics2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_topics.loading}}'
+    value: false
+  limit: '25'
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+  rowHeight: small
+  heightMode: auto
+  showFilter: true
+  multiplyRowSelection:
+    value: true
+    dataValue: 'false'
+    withData: false
+  rowSelectionType:
+    value: checkbox
+    dataValue: row
+    withData: false
+  selectedRowIndex: '-1'
+parentSlotId: '17210539416120.9163935659158713'
+index: 0
+actions: {}
+slots:
+  - id: '17210539416120.14428277450906712'
+    name: columns
+    children:
+      - id: '17210539416120.9402878697540302'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString112
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 0
+        slots: []
+      - id: '17210539416120.9421011754879791'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString113
+          prop: pillar
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 1
+        slots: []
+      - id: '17210539416120.9901356511489281'
+        definitionId: atomicText
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText40
+          prop: topic
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 2
+        slots: []
+      - id: '17210539416120.43876265005172055'
+        definitionId: atomicText
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText41
+          prop: subject
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 3
+        slots: []
+      - id: '17210539416120.039143309578169916'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString114
+          prop: cache_type
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 4
+        slots: []
+      - id: '17210539416120.3674954371242025'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString115
+          prop: pillar_id
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 5
+        slots: []
+      - id: '17210539416120.6181843032391887'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString116
+          prop: subject_id
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        parentSlotId: '17210539416120.14428277450906712'
+        index: 6
+        slots: []

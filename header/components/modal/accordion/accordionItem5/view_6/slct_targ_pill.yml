@@ -1,0 +1,74 @@
+id: '17210492760210.05699426037663913'
+definitionId: selectWithAtomics
+parentSlotId: '17210491697310.38540773286744523'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 4
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: '{{actions.get_pillars.data}}'
+    withData: true
+  name: slct_targ_pill
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: id
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_pillars.loading}}'
+    value: false
+  labelConfig:
+    text: Pillar
+    position: horizontal
+    align: left
+actions: {}
+slots:
+  - id: '17210492760210.6879562478167349'
+    name: optionViewTypes
+    children:
+      - id: '17210494687860.8255522257427366'
+        definitionId: atomicString
+        parentSlotId: '17210492760210.6879562478167349'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString71
+          prop: pillar
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []

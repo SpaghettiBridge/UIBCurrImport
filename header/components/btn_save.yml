@@ -44,6 +44,7 @@ properties:
 
       }return false
     withData: true
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{activeRoute.name == "New Term"}}'
 actions:
   buttonClick:
     - action: '17193996235400.28083468390359734'

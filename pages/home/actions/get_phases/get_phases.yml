@@ -55,7 +55,6 @@ steps:
 mode: manual
 modeConfigured: false
 parentPageId: '1'
-parentId: null
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.get_phases.name}}"?

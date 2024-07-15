@@ -1,0 +1,96 @@
+id: '17210536940090.6352355470048967'
+definitionId: selectMulti
+parentSlotId: '17210533465490.6837270756103242'
+styles:
+  xl:
+    gridItem:
+      x: 5
+      y: 0
+      w: 5
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 20
+      w: 24
+      h: 10
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 40
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: >-
+      {{actions.get_existing_terms.data.filter(x=> x.academic_year_id
+      ==ui.slct_acYear2.value )}}
+    withData: true
+  name: slct_term2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: id
+  showLoading:
+    withData: true
+    dataValue: '{{actions.get_newterms.loading}}'
+    value: false
+  labelConfig:
+    text: Term
+    position: horizontal
+    align: left
+  value: ''
+  allowSelectAll:
+    value: true
+    dataValue: 'true'
+    withData: false
+  multi: false
+  allowResetValue:
+    value: true
+    dataValue: 'true'
+    withData: false
+  __UIBAKERY__SHOW__CONDITION__CODE__: ''
+actions:
+  selectChange:
+    - action: '17210540668120.26509363550781795'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+  focusEvent: []
+  blurEvent: []
+slots:
+  - id: '17210536940090.4401578059025155'
+    name: optionViewTypes
+    children:
+      - id: '17210536940090.7320181845820719'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString75
+          prop: name
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '17210536940090.4401578059025155'
+        index: 0
+        slots: []

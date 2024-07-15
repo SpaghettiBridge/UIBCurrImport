@@ -1,6 +1,9 @@
 id: '1'
-name: Home
+name: New Term
 url: home
+roleIds: []
+disableInMenu: false
+hideFromMenu: false
 slots:
   - id: '1'
     name: content

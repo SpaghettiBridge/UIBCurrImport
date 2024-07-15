@@ -1,0 +1,72 @@
+id: '17194046509390.933065400754497'
+kind: workflow
+name: get_subjects
+nameConfigured: true
+steps:
+  - id: '17194046538070.8462705899567002'
+    type: LOAD_COLLECTION
+    name: load
+    params:
+      - type: datasourceId
+        value: Supabase Bridgelink Apps Database
+        valueType: custom
+        mustSelectFirst: true
+      - type: resourceId
+        value: public.lu_pillar_subject_cache
+        valueType: custom
+        mustSelectFirst: true
+      - type: filters
+        value: []
+        valueType: custom
+        interpolationType: string
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+        interpolationType: string
+      - type: additionalParams
+        value: []
+        valueType: custom
+        interpolationType: string
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: false
+mode: manual
+modeConfigured: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.get_subjects.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.get_subjects.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.get_subjects.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+selected: true
+configured: true

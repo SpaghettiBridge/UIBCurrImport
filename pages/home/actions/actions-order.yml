@@ -1,14 +1,8 @@
-- get_acYears
-- created_terms
-- get_terms
 - get_services
-- get_topics
-- get_phases
 - changeTab
+- get_phases
 - create_currHead
 - reset_TaP_fields
 - reset_Tables
-- get_pillars
-- get_subjects
 - onChange
 - get_literacy_texts

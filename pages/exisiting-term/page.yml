@@ -1,0 +1,31 @@
+id: '17210533465490.682386052214137'
+name: Exisiting Term
+url: exisiting-term
+roleIds: []
+disableInMenu: false
+hideFromMenu: false
+parentPageId: ''
+slots:
+  - id: '17210533465490.32495264470473506'
+    name: content
+    children:
+      - id: '17210533465490.424165840298276'
+        definitionId: grid
+        parentSlotId: '17210533465490.32495264470473506'
+        styles: {}
+        properties:
+          name: exisiting-term
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '17210533465490.6837270756103242'
+            name: content
+            children:
+              - components/slct_acYear2.yml
+              - components/slct_term2.yml
+              - components/card2/card2.yml
+              - components/tbs_topics2.yml
+              - components/divider3.yml
