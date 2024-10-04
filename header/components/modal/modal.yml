@@ -6,7 +6,7 @@ styles:
     gridItem:
       x: 0
       y: 0
-      w: 3
+      w: 4
       h: 10
     flex:
       size:
@@ -47,6 +47,7 @@ properties:
     - xl
     - xs
   buttonText: Something Missing?
+actions: {}
 slots:
   - id: '17194044573620.5879637810329943'
     name: header

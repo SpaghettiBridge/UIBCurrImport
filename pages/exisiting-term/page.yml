@@ -3,7 +3,7 @@ name: Exisiting Term
 url: exisiting-term
 roleIds: []
 disableInMenu: false
-hideFromMenu: false
+hideFromMenu: true
 parentPageId: ''
 slots:
   - id: '17210533465490.32495264470473506'

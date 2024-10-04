@@ -25,7 +25,7 @@ steps:
           orderBy:
             value: sorting
           orderDirection:
-            value: asc
+            value: desc
         valueType: custom
       - type: additionalParams
         value:
