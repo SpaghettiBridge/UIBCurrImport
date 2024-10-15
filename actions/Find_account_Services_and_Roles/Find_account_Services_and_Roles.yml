@@ -233,15 +233,20 @@ configured: true
 kind: workflow
 actions:
   success:
-    - action: '17193894770860.5044530861863039'
-      paramCode: ''
-      blockPageLoad: false
-      preventDefault: false
-      index: 0
     - action: '17193904379520.02947835777843877'
       paramCode: ''
       blockPageLoad: false
       preventDefault: false
+      index: 0
+    - action: '17193893963380.17026367453481428'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
       index: 1
+    - action: '17290077900380.9254324273508343'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 2
   error: []
 parentId: null
