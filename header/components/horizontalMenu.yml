@@ -44,7 +44,6 @@ properties:
       {
         title: 'Welcome',
         link: '/welcome',
-        disabled: true,
         hidden: true
       },
       {
