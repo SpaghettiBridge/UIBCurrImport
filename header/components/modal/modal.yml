@@ -47,6 +47,7 @@ properties:
     - xl
     - xs
   buttonText: Something Missing?
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{activeRoute.name != "Welcome"}}'
 actions: {}
 slots:
   - id: '17194044573620.5879637810329943'

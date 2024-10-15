@@ -1,0 +1,33 @@
+id: '17290073340700.8680046661735377'
+name: Welcome
+url: welcome
+roleIds: []
+disableInMenu: true
+hideFromMenu: true
+parentPageId: ''
+slots:
+  - id: '17290073340700.5679219012376364'
+    name: content
+    children:
+      - id: '17290073340700.5980493536235112'
+        definitionId: grid
+        parentSlotId: '17290073340700.5679219012376364'
+        styles: {}
+        properties:
+          name: welcome
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        actions:
+          pageLoad:
+            - action: '17201761938370.08688372589059701'
+              paramCode: ''
+              blockPageLoad: false
+              preventDefault: false
+              index: 0
+        slots:
+          - id: '17290073340700.30504990049555913'
+            name: content
+            children: []
