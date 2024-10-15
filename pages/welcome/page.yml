@@ -2,7 +2,7 @@ id: '17290073340700.8680046661735377'
 name: Welcome
 url: welcome
 roleIds: []
-disableInMenu: true
+disableInMenu: false
 hideFromMenu: true
 parentPageId: ''
 slots:
