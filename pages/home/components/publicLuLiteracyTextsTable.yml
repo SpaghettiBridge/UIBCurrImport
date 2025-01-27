@@ -88,10 +88,13 @@ properties:
     value: false
     dataValue: 'false'
     withData: false
-  showFilter: true
   selectedRowIndex: |-
     let length = actions.get_literacy_texts.data.length
     return Array.from({length }, (_, index) => index);
+  showFilter:
+    withData: false
+    dataValue: 'false'
+    value: true
 actions: {}
 slots:
   - id: '17194063382220.983060171851805'
@@ -113,6 +116,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 0
         slots: []
       - id: '17194063829140.1757441139169602'
@@ -131,6 +139,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 1
         slots: []
       - id: '17194063829140.7176351262403691'
@@ -149,6 +162,11 @@ slots:
           width: 60
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 2
         slots: []
       - id: '17194063829140.2683911675932653'
@@ -168,6 +186,11 @@ slots:
           widthMode: auto
           filter: true
           title: PSHE Topics
+          forceEditSubmitTriggers:
+            - blur
+          labelConfig:
+            align: left
+            position: vertical
         index: 4
         slots: []
       - id: '17194063829140.3142073915446115'
@@ -186,6 +209,11 @@ slots:
           width: 200
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - blur
+          labelConfig:
+            align: left
+            position: vertical
         index: 3
         slots: []
       - id: '17194063829140.3952043587173313'
@@ -204,6 +232,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 5
         slots: []
       - id: '17194063829140.5143532412753617'
@@ -222,6 +255,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 6
         slots: []
       - id: '17194063829140.6764808053504827'
@@ -240,6 +278,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 7
         slots: []
       - id: '17194063829140.7690451044496402'
@@ -258,6 +301,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 8
         slots: []
       - id: '17194063829140.5327638246507882'
@@ -276,5 +324,10 @@ slots:
           width: 200
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - blur
+          labelConfig:
+            align: left
+            position: vertical
         index: 9
         slots: []

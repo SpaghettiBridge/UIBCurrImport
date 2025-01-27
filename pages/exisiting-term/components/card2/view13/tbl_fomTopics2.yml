@@ -77,7 +77,6 @@ properties:
       border: none
   rowHeight: small
   heightMode: auto
-  showFilter: true
   multiplyRowSelection:
     value: true
     dataValue: 'false'
@@ -91,6 +90,10 @@ properties:
     Mathematics").length
 
     return Array.from({length }, (_, index) => index);
+  showFilter:
+    withData: false
+    dataValue: 'false'
+    value: true
 parentSlotId: '17210539416120.4158371074367855'
 index: 0
 actions: {}
@@ -113,6 +116,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 0
         slots: []
@@ -131,6 +139,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 1
         slots: []
@@ -149,6 +162,11 @@ slots:
           width: 200
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - blur
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 2
         slots: []
@@ -167,6 +185,11 @@ slots:
           width: 200
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - blur
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 3
         slots: []
@@ -185,6 +208,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 4
         slots: []
@@ -203,6 +231,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 5
         slots: []
@@ -221,6 +254,11 @@ slots:
           width: 120
           widthMode: auto
           filter: true
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '17210539416120.7977941296243687'
         index: 6
         slots: []

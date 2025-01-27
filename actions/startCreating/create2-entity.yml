@@ -1,0 +1,4 @@
+mode: custom
+valueByMode:
+  custom: "{{ \n\nreturn actions.get_services.data.map(x=> {return { \n\tservice_id:x.id,\n  term_id:ui.slct_term.value\n} })\n\n }}"
+  structured: {}
