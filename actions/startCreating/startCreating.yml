@@ -3,6 +3,34 @@ kind: workflow
 name: startCreating
 nameConfigured: true
 steps:
+  - id: '17370215254740.14735747005932365'
+    type: BULK_CREATE_ENTITY
+    name: create2
+    params:
+      - type: datasourceId
+        value: Supabase Bridgelink Apps Database
+        valueType: string
+      - type: resourceId
+        value: public.join_service_terms
+        valueType: string
+      - type: entity
+        value: ./create2-entity.yml
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
   - id: '17193998089910.38729564433965735'
     type: customAsyncCode
     name: create_currHeaderArray

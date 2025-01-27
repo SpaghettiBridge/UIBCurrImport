@@ -1,10 +1,10 @@
 metadata:
   favicon: ''
-  code: ''
   title: Import from Git
   description: null
   breakpoints: []
   rendererCachingEnabled: false
+  skipDepsComparisonInCompilerCache: false
 appSettings:
   properties:
     defaultData: '{}'
